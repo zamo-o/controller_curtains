@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovládač</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box-border">
+
+        
+            <div class="manualne-ovladanie-box">
+                <!- 
+                    manuálne ovládanie
+                ->
+                <button class="maualne-ovladanie-button" onclick="">UP</button>
+                <button class="maualne-ovladanie-button" onclick="">DOWN</button>    
+            </div>
+            
+            
+                <div class="rychlost-box">
+            
+                    <p>SPEED</p>
+                    <div class="buttony">
+                        <button onclick="">1X</button>
+                        <button onclick="">3X</button>
+                        <button onclick="">5X</button>  
+                    </div>
+                    
+
+                </div>
+                <div class="senzory-info-box">
+                    <div class="senzory-info-dva">
+                        <p>TEMPERATURE : <%= temperature %></p>
+                        <p>PRESSURE : <%= pressure %></p>
+                    </div>
+                    <div class="senzory-info-dva">
+                        <p>LIGHT : <%= light %></p>
+                        <p>HUMIDITY : <%= humidity %></p>
+                    </div>
+                    
+                </div>
+            
+
+
+            <div class="spanok-func-box">
+                <!- 
+                    zada pocet hodin na spanie
+                    zacne sleep po 1 sekunde, a caka ci neche pouzivatel prerusit funkciu
+
+                    ked uplnie cas, prepne do rezimu citlivost na svetlo
+                ->
+                <p>SLEEP MODE</p>
+                <form action="/forHours" id="sleepForm">
+                    <label for="forHours">HOURS:</label>
+                    <input type="number" id="forHours" name="forHours">
+                    <input type="submit" value="SET">
+                </form>
+                <button>CANCEL</button>
+                
+            </div>
+
+
+
+            <div class="work-func-box">
+                <!- 
+                    prepne do rezimu citlivost na svetlo
+                -> 
+                <p>WORKING MODE</p>
+                <button>SET</button>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById('sleepForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+        });
+    
+    </script>
+</body>
+</html>

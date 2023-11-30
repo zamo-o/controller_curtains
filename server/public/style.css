@@ -1,0 +1,183 @@
+
+@font-face {
+    font-family: 'fira_sansblack';
+    src: url('firasans-black-webfont.woff2') format('woff2'),
+         url('firasans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('firasans-light-webfont.woff2') format('woff2'),
+         url('firasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pixieText';
+    src: url('./fonts/pixellari-webfont.woff') format('woff'),
+    url('./fonts/pixellari-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pixieMain';
+    src: url('./fonts/pixelmania-webfont.woff') format('woff'),
+    url('./fonts/pixelmania-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Courier New", sans-serif; */
+    font-family: 'pixieText';
+    color: rgb(44, 45, 45);
+    text-align: center;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background-color: #e84125;
+    border-radius: 100px;
+}
+button:active {
+    background-color: #000000;
+    color: #e9dfd5;
+}
+input{
+    background: none;
+    border: none;
+    border-radius: 100px;
+    border: 1.5px solid #000000;
+    padding: 10px;
+}
+.box {
+    height: 100vh;
+    background-color: #e9dfd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-border {
+    width: 40%;
+    background-color: #e9dfd5;
+    border: 1.4px solid rgb(44, 45, 45);
+    border-radius: 100px;
+}
+/*------------ MANUÁLNE OVLÁDANIE ------------*/
+.manualne-ovladanie-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+.maualne-ovladanie-button {
+    color: #e9dfd5;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 2rem;
+    margin: 1%;
+    font-weight: 900;
+    font-family: 'pixieMain';
+}
+
+/*------------ RÝCHLOSŤ OVLÁDANIA ------------*/
+.rychlost-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin-top: 15px;
+}
+.rychlost-box .buttony {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rychlost-box p {
+    font-size: 2rem;
+    font-family: 'pixieMain';
+}
+.rychlost-box .buttony {
+    margin: 1% 0;
+}
+.rychlost-box .buttony button {
+    font-size: 1.2rem;
+    padding: 10% 20%;
+    margin: 0 10%;
+    
+}
+
+/*------------ INFO OD SENZOROV ------------*/
+.senzory-info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.senzory-info-box .senzory-info-dva {
+    margin: 0 3%;
+}
+.senzory-info-box .senzory-info-dva p {
+    font-size: 1.2rem;
+    margin: 10% 0;
+}
+
+/*------------ SLEEP SEKCIA ------------*/
+.spanok-func-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.spanok-func-box p {
+    font-family: 'pixieMain';
+    font-size: 2rem;
+}
+.spanok-func-box form label, input {
+    font-size: 1.2rem;
+}
+.spanok-func-box button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+/*------------ WORKING SEKCIA ------------*/
+.work-func-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0 15px 0;
+}
+.work-func-box p{
+    font-family: 'pixieMain';
+    font-size: 2rem;
+}
+
+.work-func-box button {
+    font-size: 1.2rem;
+    padding: 10px 35px;
+    margin-top: 5px;
+}
